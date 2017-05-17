@@ -59,7 +59,7 @@ num_iters = 400
 theta = np.zeros(3)
 
 # Multiple Dimension Gradient Descent
-theta, hist = gradientDescent(X, p, theta, alpha, num_iters)
+theta, hist = gradientDescentMulti(X, p, theta, alpha, num_iters)
 
 # Plot the convergence graph
 fig = plt.figure()
@@ -117,7 +117,7 @@ print('\n')
 price = np.dot([1,siz,br],theta) # You should change this
 
 
-print('Predicted price of house with size = {} and {} no of bedrooms (using gradient descent):\n '.format(siz, br),
+print('Predicted price of house with size = {} and {} no of bedrooms (Normalization):\n '.format(siz, br),
       price)
 
 

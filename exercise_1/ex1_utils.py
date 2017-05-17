@@ -70,9 +70,9 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
 
 	# Save the cost J in every iteration
         J_history[i] = computeCost(X, y, theta)
-        print('Cost function has a value of: ', J_history[i])
+        # print('Cost function has a value of: ', J_history[i])
     
-    return (theta,J_History)
+    return (theta,J_history)
 
 
 def gradientDescent(X, y, theta, alpha, num_iters):
@@ -91,7 +91,7 @@ def gradientDescent(X, y, theta, alpha, num_iters):
 
 	# Save the cost J in every iteration
         J_history[i] = computeCost(X, y, theta)
-        print('Cost function as a value of: ',J_history[i])
+       #  print('Cost function as a value of: ',J_history[i])
     
     return (theta, J_history)
 
